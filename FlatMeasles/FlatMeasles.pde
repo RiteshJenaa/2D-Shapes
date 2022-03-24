@@ -1,7 +1,7 @@
 //Global Variables
 //
 //Display Geomtery
-fullScreen();
+fullScreen(); //displayWidth, displayHeight
 //Landscape
 
 //
