@@ -8,7 +8,7 @@ println (displayWidth, displayHeight); //Verification of values
 //Display Orientation
 //If ( width >= height ) 
 String orientation = ( width >= height ) ? "Landscape or Square": "Portrait";
-println("Display Orientation.", orientation);
+println("Display Orientation:", orientation);
 if ( orientation=="Portrait" ) println("Turn your PFHONE"); 
 /*
 if ( orientation=="Landscape or Square" )
@@ -23,7 +23,8 @@ if ( orientation=="Landscape or Square" )
 //
 //Face
 //Center a circle
-//rect();
+rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+ellipse(faceX, faceY, faceDiameter, faceDiameter);
 //
 //Left Eye
 //rect();
