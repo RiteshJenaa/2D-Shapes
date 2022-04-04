@@ -16,11 +16,10 @@ println (appWidth, appHeight);
 
 //Display Orientation
 //If ( appWidth >= appHeight ) {println("Landscape or Square");} else {println("Portrait");}
-String Is="Landscape or Square" , p=""Portrait", DO
-String orientation = ( width >= height ) ? "Landscape or Square": "Portrait";
-
-println("Display Orientation:", orientation);
-if ( orientation=="Portrait" ) println("Turn your PFHONE"); 
+String Is="Landscape or Square" , p="Portrait", DO="Display Orientation:", instruct="TURN YOUR PFHONE";
+String orientation = ( appWidth >= appHeight ) ? Is : p;
+println(DO, "Display Orientation:");
+if ( orientation=="P" ) println("Turn your PFHONE"); 
 /*
 if ( orientation=="Landscape or Square" )
  {//Empty IF
@@ -79,14 +78,18 @@ triangle(XNOSE1,YNOSE1,XNOSE2,YNOSE2,XNOSE3,YNOSE3);
 //rect();
 strokeWeight(mouthOPEN);
 line(mouthX1, mouthY1, mouthX2, mouthY2);
-strokeWeight(reset);
+strokeWeight(reset); //reset = 1px
 //
 //Measle
-float = measleX = appWidth*1/2;
-float = measleY = appHeight*1/2;
-float measleDiameter = measleDiameter*1/99; //small measle
-color red=#FF0303, measleColor=red;
+float measleDiameter = minorDisplayDimension*1/20; //small measle = *1/80; big measle = *1/20, it is 4 times bigger 
+float measleRadius = measleDiameter*1/2;
+float = measleX = random( Measleradius, appWidth );
+float = measleY = appHeight*0;
+color red=#FF0303, measleColor=red, whiteReset=#000000;
 //rect();
 //random values
+noStroke(); //it is the outline of the shape
 fill(measleColor);
 ellipse( measleX, measleY, measleDiameter, measleDiameter );
+stroke(reset); //reset = 1px
+fill(whiteReset); //reset to whatever colour
