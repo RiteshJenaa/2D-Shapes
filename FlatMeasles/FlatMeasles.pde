@@ -1,18 +1,24 @@
 //Global Variables
-int minorDisplayDimension;
+int reset, minorDisplayDimension, mouthOPEN;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 float lefteyeX, lefteyeY, righteyeX, righteyeY, eyeDiameter;
 float mouthX1, mouthY1, mouthX2, mouthY2;
+float XNOSE1, YNOSE1, XNOSE2, YNOSE2, XNOSE3, YNOSE3;
 //
 //Display Geomtery
 fullScreen(); //displayWidth, displayHeight
 //Landscape
+int appWidth = displayWidth ,appHeight = displayHeight;
 println (displayWidth, displayHeight); //Verification of values
+println (appWidth, appHeight);
 //
+
 //Display Orientation
-//If ( width >= height ) {println("Landscape or Square");} else {println("Portrait");}
+//If ( appWidth >= appHeight ) {println("Landscape or Square");} else {println("Portrait");}
+String Is="Landscape or Square" , p=""Portrait", DO
 String orientation = ( width >= height ) ? "Landscape or Square": "Portrait";
+
 println("Display Orientation:", orientation);
 if ( orientation=="Portrait" ) println("Turn your PFHONE"); 
 /*
@@ -25,24 +31,33 @@ if ( orientation=="Landscape or Square" )
 
 //
 //Variable Population
-minorDisplayDimension = displayHeight; //AlWAYS IN LANDSCAPE
-rectFaceX = (displayWidth*2/4) - minorDisplayDimension; //You can simplify to 1/2
-rectFaceY = displayHeight*0;  
+minorDisplayDimension = appHeight; //AlWAYS IN LANDSCAPE
+reset = minorDisplayDimension / minorDisplayDimension; // 1px
+rectFaceX = (appWidth*1/2) - minorDisplayDimension; //You can simplify to 1/2
+rectFaceY = appHeight*0;  
 rectFaceWidth = minorDisplayDimension; //Looking for a square
 rectFaceHeight = minorDisplayDimension; //Looking for a square
-faceX = displayWidth*1/2;
-faceY = displayHeight*1/2;
+faceX = appWidth*1/2;
+faceY = appHeight*1/2;
 faceDiameter = minorDisplayDimension;
-lefteyeX = width*3/8;
-righteyeX = width*5/8; 
-lefteyeY = height*1/4;
+lefteyeX = appWidth*3/8;
+righteyeX = appWidth*5/8; 
+lefteyeY = appHeight*1/4;
 righteyeY = lefteyeY; //Good Practice
 eyeDiameter = minorDisplayDimension*1.7/8;
 mouthX1 = lefteyeX;
-mouthY1 = displayHeight*3/4;
+mouthY1 = appHeight*3/4;
 mouthX2 = righteyeX; 
 mouthY2 = mouthY1;
+mouthOPEN = minorDisplayDimension;
+XNOSE1 = ;
+YNOSE1 = ;
+XNOSE2 = ;
+YNOSE2 = ;
+XNOSE3 = ;
+YNOSE3 = ;
 //
+
 //Face : CIRCLE = Inscribing a circle inside a square
 //Center a circle
 rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
@@ -62,9 +77,16 @@ triangle(XNOSE1,YNOSE1,XNOSE2,YNOSE2,XNOSE3,YNOSE3);
 //
 //Mouth
 //rect();
+strokeWeight(mouthOPEN);
 line(mouthX1, mouthY1, mouthX2, mouthY2);
+strokeWeight(reset);
 //
 //Measle
+float = measleX = appWidth*1/2;
+float = measleY = appHeight*1/2;
+float measleDiameter = measleDiameter*1/99; //small measle
+color red=#FF0303, measleColor=red;
 //rect();
-//
-//Measle
+//random values
+fill(measleColor);
+ellipse( measleX, measleY, measleDiameter, measleDiameter );
