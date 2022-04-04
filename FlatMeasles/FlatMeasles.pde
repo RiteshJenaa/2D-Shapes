@@ -45,15 +45,15 @@ lefteyeY = appHeight*1/4;
 righteyeY = lefteyeY; //Good Practice
 eyeDiameter = minorDisplayDimension*1.7/8;
 mouthX1 = lefteyeX;
-mouthY1 = appHeight*7/10;
+mouthY1 = appHeight*7.2/10;
 mouthX2 = righteyeX; 
 mouthY2 = mouthY1;
 mouthOPEN = minorDisplayDimension*1/4;
 XNOSE1 = faceX;
 YNOSE1 = lefteyeY;
-XNOSE2 = faceX - lefteyeY*6/12;
+XNOSE2 = faceX - lefteyeY*5/12;
 YNOSE2 = faceY;
-XNOSE3 = faceX + lefteyeY*6/12;
+XNOSE3 = faceX + lefteyeY*5/12;
 YNOSE3 = faceY;
 //
 
