@@ -5,7 +5,9 @@ float faceX, faceY, faceDiameter;
 float lefteyeX, lefteyeY, righteyeX, righteyeY, eyeDiameter;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float XNOSE1, YNOSE1, XNOSE2, YNOSE2, XNOSE3, YNOSE3;
+
 //
+
 //Display Geomtery
 fullScreen(); //displayWidth, displayHeight
 //Landscape
