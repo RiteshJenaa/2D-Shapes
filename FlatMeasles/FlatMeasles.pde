@@ -102,7 +102,7 @@ color measleColour = ( nightMode==false ) ? color ( 255, random(0,30), random(0,
 color whiteReset=#000000;
 //
 
-//rect();
+rect( measleX-measleDiameter*1/2, measleY-measleDiameter*1/2, measleDiameter, measleDiameter );
 //random values
 noStroke(); //it is the outline of the shape
 fill(measleColour);
