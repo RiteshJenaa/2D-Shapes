@@ -1,5 +1,6 @@
 void population() 
 {
+  int appWidth = displayWidth, appHeight = displayHeight;
   //Variable Population
   minorDisplayDimension = appHeight; //AlWAYS IN LANDSCAPE
   reset = minorDisplayDimension / minorDisplayDimension; // 1px
