@@ -1,3 +1,6 @@
+//Global Variables
+float XNOSE1, YNOSE1, XNOSE2, YNOSE2, XNOSE3, YNOSE3;
+//
 void noseDraw()
 {
   //Nose

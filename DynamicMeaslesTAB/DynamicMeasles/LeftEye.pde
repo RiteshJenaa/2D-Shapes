@@ -1,3 +1,6 @@
+//Global Variables
+float mouthX1, mouthY1, mouthX2, mouthY2;
+//
 void leftEyeDraw()
 {
   //Left Eye

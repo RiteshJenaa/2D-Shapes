@@ -1,7 +1,7 @@
 void population() 
 {
-  int appWidth = displayWidth, appHeight = displayHeight;
   //Variable Population
+  int appWidth = displayWidth, appHeight = displayHeight;
   minorDisplayDimension = appHeight; //AlWAYS IN LANDSCAPE
   reset = minorDisplayDimension / minorDisplayDimension; // 1px
   rectFaceX = (appWidth*1/2) - (minorDisplayDimension*1/2); //You can simplify to 1/2

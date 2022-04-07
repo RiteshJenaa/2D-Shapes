@@ -1,3 +1,6 @@
+//Global variables
+int  mouthOPEN;
+//
 void mouthDraw()
 {
   //Mouth
