@@ -1,6 +1,6 @@
 void displaySetup()
 {
-   //Display Geomtery
+  //Display Geomtery
   //Landscape
   int appWidth = displayWidth, appHeight = displayHeight;
   println (displayWidth, displayHeight); //Verification of values

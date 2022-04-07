@@ -13,13 +13,7 @@ void setup()
   fullScreen(); //displayWidth, displayHeight
   displaySetup();
   population();
-  //
-  //Face : CIRCLE = Inscribing a circle inside a square
-  //Center a circle
-  //rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
-  ellipse(faceX, faceY, faceDiameter, faceDiameter);
-  //
-
+  faceSetup();
   //
 }//End setup
 //
