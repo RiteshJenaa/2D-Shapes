@@ -1,5 +1,6 @@
 //Global variables
 int  mouthOPEN;
+float mouthX1, mouthY1, mouthX2, mouthY2;
 //
 void mouthDraw()
 {

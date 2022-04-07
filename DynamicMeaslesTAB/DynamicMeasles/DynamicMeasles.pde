@@ -2,8 +2,6 @@
 int appWidth, appHeight;
 //
 int reset, minorDisplayDimension;
-float lefteyeX, lefteyeY, righteyeX, righteyeY, eyeDiameter;
-float rectlefteyeX, rectlefteyeY, rectlefteyeWidth, rectlefteyeHeight;
 //
 
 void setup()
