@@ -22,10 +22,12 @@ void draw()
   mouthDraw();
 }//End draw
 //
-void keyPressed() {
+void keyPressed() 
+{
 }//End keyPressed
 //
-void mousePressed() {
+void mousePressed() 
+{
 }//End mousePressed
 //
 //End Main Program
