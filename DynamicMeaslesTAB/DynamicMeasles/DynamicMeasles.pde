@@ -10,29 +10,8 @@ float XNOSE1, YNOSE1, XNOSE2, YNOSE2, XNOSE3, YNOSE3;
 
 void setup()
 {
-  //Display Geomtery
   fullScreen(); //displayWidth, displayHeight
-  //Landscape
-  int appWidth = displayWidth, appHeight = displayHeight;
-  println (displayWidth, displayHeight); //Verification of values
-  println (appWidth, appHeight);
-  //
-
-  //Display Orientation
-  //If ( appWidth >= appHeight ) {println("Landscape or Square");} else {println("Portrait");}
-  String Is="Landscape or Square", p="Portrait", DO="Display Orientation:", instruct="TURN YOUR PFHONE";
-  String orientation = ( appWidth >= appHeight ) ? Is : p;
-  println(DO, "Display Orientation");
-  if ( orientation==p) println(instruct); 
-  /*
-  Explanation
-   if ( orientation=="Landscape or Square" )
-   {//Empty IF
-   } else {
-   println("TURN YOUR PFHONE"); 
-   }
-   */
-  //
+  displaySetup();
   population();
   //
   //Face : CIRCLE = Inscribing a circle inside a square
