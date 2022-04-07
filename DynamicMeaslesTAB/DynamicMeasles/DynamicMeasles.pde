@@ -20,6 +20,7 @@ void setup()
 
 void draw() 
 {
+  measleDraw();
   //Left Eye
   //
   //rect(lefteyeX-eyeDiameter*1/2, lefteyeY-eyeDiameter*1/2, eyeDiameter, eyeDiameter);
