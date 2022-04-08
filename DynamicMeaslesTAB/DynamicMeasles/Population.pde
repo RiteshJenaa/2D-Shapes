@@ -27,6 +27,10 @@ void population()
   YNOSE2 = faceY;
   XNOSE3 = faceX + lefteyeY*6.5/12;
   YNOSE3 = faceY;
+  titleX = appWidth*1/100;
+  titleY = appHeight*1/100;
+  titleWidth = appWidth*1/4;
+  titleHeight = appHeight*1/4; 
   //
 }
 //End Population

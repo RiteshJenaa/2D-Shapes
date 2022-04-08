@@ -10,6 +10,7 @@ void setup()
   displaySetup();
   population();
   faceSetup();
+  textSetup();
   //
 }//End setup
 
@@ -20,6 +21,7 @@ void draw()
   rightEyeDraw();
   noseDraw();
   mouthDraw();
+  textDraw();
 }//End draw
 //
 void keyPressed() 
