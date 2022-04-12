@@ -4,10 +4,10 @@ color blue=#588EFF, Green=#19833A, buttonColour; //Notice NightMode blue values
 //
 void quitButtonSetupPopulation(int canvasCentre)
 { //Parameter concept
-  quitButtonX = (appWidth*1/2) - appWidth*1/4;
-  quitButtonY = canvasCentre - appHeight*1/4;
-  quitButtonWidth = appWidth*1/2;
-  quitButtonHeight = appHeight*1/2;
+  quitButtonX = (appWidth*1/2) - appWidth*1/7;
+  quitButtonY = canvasCentre - appHeight*1/7;
+  quitButtonWidth = appWidth*1/6;
+  quitButtonHeight = appHeight*1/6;
 }
 //End quitButtonSetup
 

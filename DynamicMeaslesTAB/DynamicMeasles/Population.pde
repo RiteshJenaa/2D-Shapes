@@ -1,5 +1,11 @@
 void population() 
 {
+  //Population
+  //Similar to faceRect
+  int minordisplayDimension = appHeight; //thinking experiment 
+  int canvasCentre = minordisplayDimension*1/2;
+  quitButtonSetupPopulation(canvasCentre); //Parameters
+  //
   //Variable Population
   int appWidth = displayWidth, appHeight = displayHeight;
   minorDisplayDimension = appHeight; //AlWAYS IN LANDSCAPE
@@ -32,10 +38,5 @@ void population()
   titleWidth = appWidth*1/4;
   titleHeight = appHeight*1/4; 
   //
-  //Population
-  //Similar to faceRect
-  int minordisplayDimension = appHeight; //thinking experiment 
-  int canvasCentre = minordisplayDimension*1/2;
-  quitButtonSetupPopulation(canvasCentre); //Parameters
 }
 //End Population
