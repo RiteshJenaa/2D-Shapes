@@ -8,18 +8,6 @@ void displaySetup()
   //
   //Display Orientation
   //If ( appWidth >= appHeight ) {println("Landscape or Square");} else {println("Portrait");}
-  String Is="Landscape or Square", p="Portrait", DO="Display Orientation:", instruct="TURN YOUR PFHONE";
-  String orientation = ( appWidth >= appHeight ) ? Is : p;
-  println(DO, "Display Orientation");
-  if ( orientation==p) println(instruct); 
-  /*
-  Explanation
-   if ( orientation=="Landscape or Square" )
-   {//Empty IF
-   } else {
-   println("TURN YOUR PFHONE"); 
-   }
-   */
   //Landscape
   String landscape = "Good to go!";
   String portrait = "Please turn your phone";
@@ -28,5 +16,14 @@ void displaySetup()
   if ( displayOrientation==landscape ) AppWidth = displayWidth;
   if ( displayOrientation==landscape ) AppHeight = displayHeight;
   println (AppWidth, AppHeight); //Verification
+  //
+  /*
+  Explanation
+   if ( orientation=="Landscape or Square" )
+   {//Empty IF
+   } else {
+   println("TURN YOUR PFHONE"); 
+   }
+   */
 }
 //End displaySetup

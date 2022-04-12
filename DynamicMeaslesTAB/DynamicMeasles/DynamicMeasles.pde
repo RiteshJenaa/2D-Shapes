@@ -13,11 +13,13 @@ void setup()
   population();
   faceSetup();
   textSetup();
+  quitButtonTextSetup();
   //
 }//End setup
 
 void draw() 
 {
+  quitButtonTextDraw();
   quitButtonDraw();
   measleDraw();
   leftEyeDraw();
