@@ -10,9 +10,6 @@ color blue=#588EFF, Green=#19833A, buttonColour; //Notice NightMode blue values
 
 void quitButtonSetupPopulation(int canvasCentre)
 { 
-  TitleFont = createFont("Arial", 70); //Verify the existence of a font in Processing Java (Font sometimes doesn't exist) 
-  rect(TitleX, TitleY, TitleWidth, TitleHeight);
-
   //Parameter concept
   quitButtonX = (AppWidth*1/2) - AppWidth*1/15;
   quitButtonY = canvasCentre - AppHeight*1/15;
@@ -23,18 +20,17 @@ void quitButtonSetupPopulation(int canvasCentre)
 
 //
 
+void quitButtonTextSetup()
+{  
+  TitleFont = createFont("Arial", 70); //Verify the existence of a font in Processing Java (Font sometimes doesn't exist) 
+  rect(TitleX, TitleY, TitleWidth, TitleHeight);
+}
+//End quitButtonTextSetup
+
+//
+
 void quitButtonDraw()
 {
-  //Drawing Text
-  fill(red); //Ink, hexidemical copied from the colour selector
-  textAlign(CENTER, CENTER); //Align the X and Y, see Processing.org / Reference
-  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  textFont(TitleFont, 70); // Change the number untils it fits
-  text(Title, TitleX, TitleY, TitleWidth, TitleHeight);
-  fill(resetDefaultInk);
-
-  //
-
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight )
   {
     buttonColour = blue;
@@ -53,6 +49,17 @@ void quitButtonDraw()
 
 //
 
+void quitButtonTextDraw()
+{
+  //Drawing Text
+  fill(red); //Ink, hexidemical copied from the colour selector
+  textAlign(CENTER, CENTER); //Align the X and Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  textFont(TitleFont, 70); // Change the number untils it fits
+  text(Title, TitleX, TitleY, TitleWidth, TitleHeight);
+  fill(resetDefaultInk);
+}
+//End quitButtonTextDraw
 void quitButtonKeyPressed()
 {
   //Quit KeyBoard Button
