@@ -3,6 +3,8 @@ int appWidth, appHeight;
 //
 int reset, minorDisplayDimension;
 //
+int AppWidth, AppHeight;
+color resetWhite=#FFFFFF;
 
 void setup()
 {
@@ -16,6 +18,7 @@ void setup()
 
 void draw() 
 {
+  quitButtonDraw();
   measleDraw();
   leftEyeDraw();
   rightEyeDraw();
@@ -26,10 +29,12 @@ void draw()
 //
 void keyPressed() 
 {
+  quitButtonKeyPressed();
 }//End keyPressed
 //
 void mousePressed() 
 {
+  quitButtonMousePressed();
 }//End mousePressed
 //
 //End Main Program
