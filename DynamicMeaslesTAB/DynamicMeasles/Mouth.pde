@@ -9,13 +9,13 @@ int pic1Width, pic1Height;
 int largerPic1Dimension, smallerPic1Dimension;
 float imageWidthRatioPic1=0.0, imageHeightRatioPic1=0.0;
 Boolean widthPic1Larger=false, heightPic1Larger=false;
-color purple=#FFFFFF;
+color white=#FFFFFF;
 //
 void mouthDraw()
 {
   //Mouth
   //Populating Variables
-  pic1 = loadImage("smile cartoon.jpg"); //Dimension: 200 x 147, width and height
+  pic1 = loadImage("smile cartoon.jpg"); //Dimension: 474 x 266, width and height
   //Aspect Ratio Calculations
   int pic1Width = 474; 
   int pic1Height = 266;
@@ -39,7 +39,7 @@ void mouthDraw()
 
   //
   //Color
-  fill(purple);
+  fill(white);
 
   //Rectangle Layout
   rect(rectXPic1, rectYPic1, rectWidthPic1, rectHeightPic1); //Image1, Landscape demonstration
