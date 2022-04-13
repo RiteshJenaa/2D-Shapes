@@ -14,6 +14,7 @@ void setup()
   faceSetup();
   textSetup();
   quitButtonTextSetup();
+  textSetup2();
   //
 }//End setup
 
@@ -27,6 +28,7 @@ void draw()
   noseDraw();
   mouthDraw();
   textDraw();
+  textDraw2();
 }//End draw
 //
 void keyPressed() 

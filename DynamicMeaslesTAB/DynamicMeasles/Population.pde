@@ -41,6 +41,10 @@ void population()
   TitleY = AppHeight*1/6;
   TitleWidth = AppWidth*1/6;
   TitleHeight = AppHeight*1/6; 
+  titleX2 = appWidth*1/100;
+  titleY2 = appHeight*3/6;
+  titleWidth2 = appWidth*1/6;
+  titleHeight2 = appHeight*1/2;
   //
 }
 //End Population

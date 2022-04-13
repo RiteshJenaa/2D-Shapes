@@ -22,7 +22,7 @@ void quitButtonSetupPopulation()
 
 void quitButtonTextSetup()
 {  
-  TitleFont = createFont("Arial", 65); //Verify the existence of a font in Processing Java (Font sometimes doesn't exist) 
+  TitleFont = createFont("Arial", 50); //Verify the existence of a font in Processing Java (Font sometimes doesn't exist) 
   rect(TitleX, TitleY, TitleWidth, TitleHeight);
 }
 //End quitButtonTextSetup
@@ -55,7 +55,7 @@ void quitButtonTextDraw()
   fill(red); //Ink, hexidemical copied from the colour selector
   textAlign(CENTER, CENTER); //Align the X and Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  textFont(TitleFont, 70); // Change the number until it fits
+  textFont(TitleFont, 50); // Change the number until it fits
   text(Title, TitleX, TitleY, TitleWidth, TitleHeight);
   fill(resetDefaultInk);
 }
