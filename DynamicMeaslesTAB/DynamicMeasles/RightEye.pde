@@ -14,7 +14,7 @@ void rightEyeDraw()
   //Right Eye
   //
   //Populating Variables
-  pic3 = loadImage("rightEyePic.jpg"); //Dimension: 921 x 924, width and height
+  pic3 = loadImage("rightEyePic1.jpg"); //Dimension: 921 x 924, width and height
   //Aspect Ratio Calculations
   int pic3Width = 921; 
   int pic3Height = 924;
