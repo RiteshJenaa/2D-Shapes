@@ -12,9 +12,9 @@ void quitButtonSetupPopulation()
 { 
   //Parameter concept
   quitButtonX = AppWidth*1/100;
-  quitButtonY = AppHeight*2/5;
-  quitButtonWidth = AppWidth*1/8;
-  quitButtonHeight = AppHeight*1/8;
+  quitButtonY = AppHeight*2/6;
+  quitButtonWidth = AppWidth*1/6;
+  quitButtonHeight = AppHeight*1/6;
 }
 //End quitButtonSetup
 
