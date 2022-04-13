@@ -4,7 +4,7 @@ void population()
   //Similar to faceRect
   int minordisplayDimension = appHeight; //thinking experiment 
   int canvasCentre = minordisplayDimension*1/2;
-  quitButtonSetupPopulation(canvasCentre); //Parameters
+  quitButtonSetupPopulation(); //Parameters
   //
   //Variable Population
   int appWidth = displayWidth, appHeight = displayHeight;
@@ -34,9 +34,13 @@ void population()
   XNOSE3 = faceX + lefteyeY*6.5/12;
   YNOSE3 = faceY;
   titleX = appWidth*1/100;
-  titleY = appHeight*1/100;
+  titleY = appHeight*1/80;
   titleWidth = appWidth*1/4;
   titleHeight = appHeight*1/4; 
+  TitleX = AppWidth*1/100;
+  TitleY = AppHeight*1/4;
+  TitleWidth = AppWidth*1/6;
+  TitleHeight = AppHeight*1/6; 
   //
 }
 //End Population

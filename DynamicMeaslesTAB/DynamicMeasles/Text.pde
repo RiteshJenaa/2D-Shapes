@@ -16,7 +16,7 @@ void textDraw()
   fill(green); //Ink, hexidemical copied from the colour selector
   textAlign(CENTER, CENTER); //Align the X and Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  textFont(titleFont, 110); // Change the number until it fits
+  textFont(titleFont, 70); // Change the number until it fits
   text(title, titleX, titleY, titleWidth, titleHeight);
   fill(resetDefaultInk);
 }

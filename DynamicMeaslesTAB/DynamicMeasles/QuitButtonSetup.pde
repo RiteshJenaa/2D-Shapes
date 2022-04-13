@@ -1,5 +1,5 @@
 //Global variables
-String Title = "";
+String Title = "Quit";
 float TitleX, TitleY, TitleWidth, TitleHeight;
 PFont TitleFont;
 color red=#F52811;
@@ -8,11 +8,11 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 color blue=#588EFF, Green=#19833A, buttonColour; //Notice NightMode blue values
 //
 
-void quitButtonSetupPopulation(int canvasCentre)
+void quitButtonSetupPopulation()
 { 
   //Parameter concept
-  quitButtonX = (AppWidth*1/2) - AppWidth*1/15;
-  quitButtonY = canvasCentre - AppHeight*1/15;
+  quitButtonX = AppWidth*1/100;
+  quitButtonY = AppHeight*2/5;
   quitButtonWidth = AppWidth*1/8;
   quitButtonHeight = AppHeight*1/8;
 }
