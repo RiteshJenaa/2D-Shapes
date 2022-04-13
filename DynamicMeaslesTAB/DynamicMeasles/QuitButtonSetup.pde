@@ -1,5 +1,5 @@
 //Global variables
-String Title = "Quit";
+String Title = "Quit below";
 float TitleX, TitleY, TitleWidth, TitleHeight;
 PFont TitleFont;
 color red=#F52811;
@@ -22,7 +22,7 @@ void quitButtonSetupPopulation()
 
 void quitButtonTextSetup()
 {  
-  TitleFont = createFont("Arial", 70); //Verify the existence of a font in Processing Java (Font sometimes doesn't exist) 
+  TitleFont = createFont("Arial", 65); //Verify the existence of a font in Processing Java (Font sometimes doesn't exist) 
   rect(TitleX, TitleY, TitleWidth, TitleHeight);
 }
 //End quitButtonTextSetup
