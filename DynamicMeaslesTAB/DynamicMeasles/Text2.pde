@@ -1,5 +1,5 @@
 //Global Variables
-String title2 = "Click the green box to exit the program";
+String title2 = "Click the green box or press w to exit the program";
 float titleX2, titleY2, titleWidth2, titleHeight2;
 PFont titleFont2;
 color yellow=#F2FF4B;

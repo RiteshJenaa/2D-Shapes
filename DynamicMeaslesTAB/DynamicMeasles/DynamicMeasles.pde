@@ -20,13 +20,17 @@ void setup()
 
 void draw() 
 {
-  quitButtonTextDraw();
-  quitButtonDraw();
+  //face draw
+
   measleDraw();
   leftEyeDraw();
   rightEyeDraw();
   noseDraw();
   mouthDraw();
+  
+  //Button and text draw
+  quitButtonTextDraw();
+  quitButtonDraw();
   textDraw();
   textDraw2();
 }//End draw
