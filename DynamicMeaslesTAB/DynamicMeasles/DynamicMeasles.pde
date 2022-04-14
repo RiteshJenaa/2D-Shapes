@@ -11,23 +11,23 @@ void setup()
   fullScreen(); //displayWidth, displayHeight
   displaySetup();
   population();
-  faceSetup();
+  backgroundSetup();
   textSetup();
   quitButtonTextSetup();
   textSetup2();
+  faceSetup();
   //
 }//End setup
 
 void draw() 
 {
   //face draw
-
   measleDraw();
   leftEyeDraw();
   rightEyeDraw();
   noseDraw();
   mouthDraw();
-  
+
   //Button and text draw
   quitButtonTextDraw();
   quitButtonDraw();
